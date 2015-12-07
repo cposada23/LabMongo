@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h1>Adicionar unnuevo libro</h1>
+        <h:form>
+            Nombre<h:inputText id="nombre" value="#{book.name}" size="20"/><br/>
+            
+            Año<h:inputText id="anio" value="#{book.year}" size="6"/><br/>
+            
+            Idioma<h:inputText id="idioma" value="#{book.language}" size="20"/><br/>
+            
+            Autor<h:inputText id="autor" value="#{book.author}" size="20"/><br/>
+            <h:commandButton actionListener="#{bookSessionBean.createBook()}" action="show" title="Add" value="submit"/><p/>
+        </h:form>
+    </h:body>
+</html>
+
